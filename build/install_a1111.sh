@@ -71,9 +71,9 @@ python3 -m install
 # python3 -m install
 
 # Install dependencies for inpaint anything extension
-# pip3 install segment_anything lama_cleaner
-cd /stable-diffusion-webui/extensions/inpaint-anything
-python3 -m install
+pip3 install segment_anything lama_cleaner
+# cd /stable-diffusion-webui/extensions/inpaint-anything
+# python3 -m install
 
 # Install dependencies for Civitai Browser+ extension
 cd /stable-diffusion-webui/extensions/sd-civitai-browser-plus
