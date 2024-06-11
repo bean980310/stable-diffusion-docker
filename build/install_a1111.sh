@@ -32,6 +32,19 @@ git clone --depth=1 https://github.com/Bing-su/adetailer.git extensions/adetaile
 git clone --depth=1 https://github.com/civitai/sd_civitai_extension.git extensions/sd_civitai_extension
 git clone https://github.com/BlafKing/sd-civitai-browser-plus.git extensions/sd-civitai-browser-plus
 git clone https://github.com/NVIDIA/Stable-Diffusion-WebUI-TensorRT.git extensions/Stable-Diffusion-WebUI-TensorRT
+git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git extensions/tag-autocomplete
+git clone https://github.com/pharmapsychotic/clip-interrogator-ext.git extensions/clip-interrogator-ext
+git clone https://github.com/feynlee/latent-upscale.git extensions/latent-upscale
+git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111.git extensions/multidiffusion-upscaler-for-automatic1111
+git clone https://github.com/adieyal/sd-dynamic-prompts.git extensions/sd-dynamic-prompts
+git clone https://github.com/mcmonkeyprojects/sd-dynamic-thresholding.git extensions/sd-dynamic-thresholding
+git clone https://github.com/kohya-ss/sd-webui-additional-networks.git extensions/sd-webui-additional-networks
+git clone https://github.com/NON906/sd-webui-chatgpt.git extensions/sd-webui-chatgpt
+git clone https://github.com/hako-mikan/sd-webui-lora-block-weight.git extensions/sd-webui-lora-block-weight
+git clone https://github.com/hako-mikan/sd-webui-regional-prompter.git extensions/sd-webui-regional-prompter
+git clone https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper.git extensions/Stable-Diffusion-Webui-Civitai-Helper
+git clone https://github.com/opparco/stable-diffusion-webui-composable-lora.git extensions/stable-diffusion-webui-composable-lora
+git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111.git extensions/ultimate-upscale-for-automatic1111
 
 # Install dependencies for Deforum, ControlNet, ReActor, Infinite Image Browsing,
 # After Detailer, and CivitAI Browser+ extensions
@@ -49,9 +62,17 @@ cd /stable-diffusion-webui/extensions/adetailer
 python3 -m install
 cd /stable-diffusion-webui/extensions/sd_civitai_extension
 pip3 install -r requirements.txt
+cd /stable-diffusion-webui/extensions/clip-interrogator-ext
+python3 -m install
+cd /stable-diffusion-webui/extensions/sd-dynamic-prompts
+python3 -m install
+cd /stable-diffusion-webui/extensions/sd-webui-chatgpt
+python3 -m install
 
 # Install dependencies for inpaint anything extension
-pip3 install segment_anything lama_cleaner
+# pip3 install segment_anything lama_cleaner
+cd /stable-diffusion-webui/extensions/inpaint-anything
+python3 -m install
 
 # Install dependencies for Civitai Browser+ extension
 cd /stable-diffusion-webui/extensions/sd-civitai-browser-plus
