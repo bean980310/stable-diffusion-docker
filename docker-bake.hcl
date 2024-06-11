@@ -3,7 +3,7 @@ variable "REGISTRY" {
 }
 
 variable "REGISTRY_USER" {
-    default = "ashleykza"
+    default = "bean980310"
 }
 
 variable "APP" {
@@ -11,7 +11,7 @@ variable "APP" {
 }
 
 variable "RELEASE" {
-    default = "6.0.5"
+    default = "1.0.0beta"
 }
 
 variable "CU_VERSION" {
