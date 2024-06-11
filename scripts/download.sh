@@ -22,3 +22,8 @@ wget https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd
 echo "Downloading SD 1.5 VAE"
 cd /workspace/stable-diffusion-webui/models/VAE
 wget https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors
+
+# echo "Downloading SD 1.5 based VAE"
+# cd /workspace/stable-diffusion-webui/models/VAE
+# wget https://huggingface.co/hakurei/waifu-diffusion-v1-4/resolve/main/vae/kl-f8-anime2.ckpt
+# wget https://huggingface.co/WarriorMama777/OrangeMixs/resolve/main/VAEs/orangemix.vae.pt
