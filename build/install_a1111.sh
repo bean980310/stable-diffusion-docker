@@ -49,6 +49,7 @@ git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111.git ext
 # Install dependencies for Deforum, ControlNet, ReActor, Infinite Image Browsing,
 # After Detailer, and CivitAI Browser+ extensions
 #pip3 install basicsr
+pip3 install --upgrade setuptools
 cd /stable-diffusion-webui/extensions/sd-webui-controlnet
 pip3 install -r requirements.txt
 cd /stable-diffusion-webui/extensions/deforum
@@ -62,12 +63,12 @@ cd /stable-diffusion-webui/extensions/adetailer
 python3 -m install
 cd /stable-diffusion-webui/extensions/sd_civitai_extension
 pip3 install -r requirements.txt
-cd /stable-diffusion-webui/extensions/clip-interrogator-ext
-python3 -m install
+# cd /stable-diffusion-webui/extensions/clip-interrogator-ext
+# python3 -m install
 cd /stable-diffusion-webui/extensions/sd-dynamic-prompts
 python3 -m install
-cd /stable-diffusion-webui/extensions/sd-webui-chatgpt
-python3 -m install
+# cd /stable-diffusion-webui/extensions/sd-webui-chatgpt
+# python3 -m install
 
 # Install dependencies for inpaint anything extension
 # pip3 install segment_anything lama_cleaner
