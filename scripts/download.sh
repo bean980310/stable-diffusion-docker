@@ -6,16 +6,20 @@ wget https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd
 
 # echo "Downloading SD 1.5 based model"
 # cd /workspace/stable-diffusion-webui/models/Stable-diffusion
-# wget https://civitai.com/api/download/models/34373?type=Model&format=PickleTensor&size=full&fp=fp16&token= --content-disposition
-# wget https://civitai.com/api/download/models/30163?type=Model&format=SafeTensor&size=full&fp=fp16&token= --content-disposition
-# wget https://civitai.com/api/download/models/90854?type=Model&format=SafeTensor&size=full&fp=fp16&token= --content-disposition
+# wget https://civitai.com/api/download/models/34373?token= --content-disposition
+# wget https://civitai.com/api/download/models/30163?token= --content-disposition
+# wget https://civitai.com/api/download/models/90854?token= --content-disposition
 # wget https://huggingface.co/WarriorMama777/OrangeMixs/resolve/main/Models/AbyssOrangeMix3/AOM3A1B_orangemixs.safetensors
+# wget https://civitai.com/api/download/models/57618?type=Model&format=SafeTensor&size=pruned&fp=fp32&token= --content-disposition
 # wget https://civitai.com/api/download/models/57618?type=Model&format=SafeTensor&size=pruned&fp=fp16&token= --content-disposition
-# wget https://civitai.com/api/download/models/11745?type=Model&format=SafeTensor&size=full&fp=fp16&token= --content-disposition
+# wget https://huggingface.co/gsdf/Counterfeit-V3.0/resolve/main/Counterfeit-V3.0_fix_fp16.safetensors
+# wget https://civitai.com/api/download/models/11745?token= --content-disposition
+# wget https://civitai.com/api/download/models/11732?token= --content-disposition
 
 # echo "Downloading SD 2 model"
 # cd /workspace/stable-diffusion-webui/models/Stable-diffusion
 # wget https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.safetensors
+# wget https://huggingface.co/stabilityai/stable-diffusion-2-1-base/resolve/main/v2-1_512-ema-pruned.safetensors
 
 # echo "Downloading SD XL model"
 # cd /workspace/stable-diffusion-webui/models/Stable-diffusion
@@ -24,10 +28,12 @@ wget https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd
 
 # echo "Downloading SD XL based model"
 # cd /workspace/stable-diffusion-webui/models/Stable-diffusion
-# wget https://civitai.com/api/download/models/384264?type=Model&format=SafeTensor&size=full&fp=fp16&token= --content-disposition
+# wget https://civitai.com/api/download/models/384264?token= --content-disposition
 # wget https://huggingface.co/cagliostrolab/animagine-xl-3.1/resolve/main/animagine-xl-3.1.safetensors
-# wget https://civitai.com/api/download/models/324619?type=Model&format=SafeTensor&size=pruned&fp=fp16&token= --content-disposition
-# wget https://civitai.com/api/download/models/412021?type=Model&format=SafeTensor&size=full&fp=fp16&token= --content-disposition
+# wget https://civitai.com/api/download/models/324619?token= --content-disposition
+# wget https://civitai.com/api/download/models/412021?token= --content-disposition
+# wget https://civitai.com/api/download/models/546178?token= --content-disposition
+# wget https://huggingface.co/gsdf/CounterfeitXL-V2.0/resolve/main/CounterfeitXL-V2.5.safetensors
 
 echo "Downloading SD 1.5 VAE"
 cd /workspace/stable-diffusion-webui/models/VAE
