@@ -49,7 +49,7 @@ git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111.git ext
 # Install dependencies for Deforum, ControlNet, ReActor, Infinite Image Browsing,
 # After Detailer, and CivitAI Browser+ extensions
 #pip3 install basicsr
-pip3 install --upgrade setuptools
+# pip3 install --upgrade setuptools
 cd /stable-diffusion-webui/extensions/sd-webui-controlnet
 pip3 install -r requirements.txt
 cd /stable-diffusion-webui/extensions/deforum
