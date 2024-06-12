@@ -27,7 +27,7 @@ wget https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd
 # wget -O AnythingXL_xl.safetensors https://civitai.com/api/download/models/384264?type=Model&format=SafeTensor&size=full&fp=fp16&token=
 # wget https://huggingface.co/cagliostrolab/animagine-xl-3.1/resolve/main/animagine-xl-3.1.safetensors
 # wget -O autismmixSDXL_autismmixPony.safetensors https://civitai.com/api/download/models/324619?type=Model&format=SafeTensor&size=pruned&fp=fp16&token=
-# wget -O gammaxlNSFWFor_v10 https://civitai.com/api/download/models/412021?type=Model&format=SafeTensor&size=full&fp=fp16&token=
+# wget -O gammaxlNSFWFor_v10.safetensors https://civitai.com/api/download/models/412021?type=Model&format=SafeTensor&size=full&fp=fp16&token=
 
 echo "Downloading SD 1.5 VAE"
 cd /workspace/stable-diffusion-webui/models/VAE
