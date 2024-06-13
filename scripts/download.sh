@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
+
+# echo "Downloading SD 1.4 model"
+# cd /workspace/stable-diffusion-webui/models/Stable-diffusion
+# wget https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/resolve/main/sd-v1-4.ckpt
+# wget https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/resolve/main/sd-v1-4-full-ema.ckpt
+
 echo "Downloading SD 1.5 model"
 cd /workspace/stable-diffusion-webui/models/Stable-diffusion
+# wget https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors
 wget https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors
 wget https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd-v1-5-inpainting.ckpt
 
@@ -18,6 +25,10 @@ wget https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd
 
 # echo "Downloading SD 2 model"
 # cd /workspace/stable-diffusion-webui/models/Stable-diffusion
+# wget https://huggingface.co/stabilityai/stable-diffusion-2/resolve/main/768-v-ema.safetensors
+# wget https://huggingface.co/stabilityai/stable-diffusion-2-base/resolve/main/512-base-ema.safetensors
+# wget https://huggingface.co/stabilityai/stable-diffusion-2-depth/resolve/main/512-depth-ema.safetensors
+# wget https://huggingface.co/stabilityai/stable-diffusion-2-inpainting/resolve/main/512-inpainting-ema.safetensors
 # wget https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.safetensors
 # wget https://huggingface.co/stabilityai/stable-diffusion-2-1-base/resolve/main/v2-1_512-ema-pruned.safetensors
 
@@ -34,6 +45,24 @@ wget https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd
 # wget https://civitai.com/api/download/models/412021?token= --content-disposition
 # wget https://civitai.com/api/download/models/546178?token= --content-disposition
 # wget https://huggingface.co/gsdf/CounterfeitXL-V2.0/resolve/main/CounterfeitXL-V2.5.safetensors
+
+# echo "Downloading SD 3 model"
+# cd /workspace/stable-diffusion-webui/models/Stable-diffusion
+# wget https://huggingface.co/stabilityai/stable-diffusion-3-medium/resolve/main/sd3_medium.safetensors
+# wget https://huggingface.co/stabilityai/stable-diffusion-3-medium/resolve/main/sd3_medium_incl_clips.safetensors
+# wget https://huggingface.co/stabilityai/stable-diffusion-3-medium/resolve/main/sd3_medium_incl_clips_t5xxlfp16.safetensors
+# wget https://huggingface.co/stabilityai/stable-diffusion-3-medium/resolve/main/sd3_medium_incl_clips_t5xxlfp8.safetensors
+
+# echo "Downloading SD 3 text encoders"
+# cd /workspace/stable-diffusion-webui/models/Stable-diffusion
+# wget https://huggingface.co/stabilityai/stable-diffusion-3-medium/resolve/main/text_encoders/clip_l.safetensors
+# wget https://huggingface.co/stabilityai/stable-diffusion-3-medium/resolve/main/text_encoders/clip_g.safetensors
+# wget https://huggingface.co/stabilityai/stable-diffusion-3-medium/resolve/main/text_encoders/t5xxl_fp8_e4m3fn.safetensors
+# wget https://huggingface.co/stabilityai/stable-diffusion-3-medium/resolve/main/text_encoders/t5xxl_fp16.safetensors
+
+# echo "Downloading SD x4 Upscale model"
+# cd /workspace/stable-diffusion-webui/models/Stable-diffusion
+# wget https://huggingface.co/stabilityai/stable-diffusion-x4-upscaler/resolve/main/x4-upscaler-ema.safetensors
 
 echo "Downloading SD 1.5 VAE"
 cd /workspace/stable-diffusion-webui/models/VAE
