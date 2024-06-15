@@ -45,6 +45,7 @@ git clone https://github.com/hako-mikan/sd-webui-regional-prompter.git extension
 git clone https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper.git extensions/Stable-Diffusion-Webui-Civitai-Helper
 git clone https://github.com/opparco/stable-diffusion-webui-composable-lora.git extensions/stable-diffusion-webui-composable-lora
 git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111.git extensions/ultimate-upscale-for-automatic1111
+git clone https://github.com/continue-revolution/sd-webui-animatediff.git extensions/sd-webui-animatediff
 
 # Install dependencies for Deforum, ControlNet, ReActor, Infinite Image Browsing,
 # After Detailer, and CivitAI Browser+ extensions
