@@ -28,6 +28,8 @@ passwd: password updated successfully
 
 apt-get update 실행
 
+apt install sudo
+
 adduser (유저명)
 New password: (비밀번호 입력)
 Retype new password: (같은 비밀번호 또 입력)

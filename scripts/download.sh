@@ -17,8 +17,8 @@ wget https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd
 # wget https://civitai.com/api/download/models/30163?token= --content-disposition
 # wget https://civitai.com/api/download/models/90854?token= --content-disposition
 # wget https://huggingface.co/WarriorMama777/OrangeMixs/resolve/main/Models/AbyssOrangeMix3/AOM3A1B_orangemixs.safetensors
-# wget https://civitai.com/api/download/models/57618?type=Model&format=SafeTensor&size=pruned&fp=fp32&token= --content-disposition
-# wget https://civitai.com/api/download/models/57618?type=Model&format=SafeTensor&size=pruned&fp=fp16&token= --content-disposition
+# wget https://huggingface.co/gsdf/Counterfeit-V3.0/resolve/main/Counterfeit-V3.0_fp32.safetensors
+# wget https://huggingface.co/gsdf/Counterfeit-V3.0/resolve/main/Counterfeit-V3.0_fp16.safetensors
 # wget https://huggingface.co/gsdf/Counterfeit-V3.0/resolve/main/Counterfeit-V3.0_fix_fp16.safetensors
 # wget https://civitai.com/api/download/models/11745?token= --content-disposition
 # wget https://civitai.com/api/download/models/11732?token= --content-disposition
