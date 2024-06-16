@@ -12,10 +12,11 @@ docker run -d \
   -p 8888:8888 \
   -p 9090:9090 \
   -e JUPYTER_PASSWORD=Jup1t3R! \
+  -e JUPYTER_LAB_PASSWORD=Jup1t3R! \
   -e ENABLE_TENSORBOARD=1 \
   bean980310/stable-diffusion-webui:1.1.0
 
-먼저 실행하고
+먼저 실행하고(단, JUPYTER_LAB_PASSWORD는 값을 변경)
 
 docker ps
 
