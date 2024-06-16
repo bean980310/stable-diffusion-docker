@@ -1,3 +1,9 @@
+#!/usr/bin/env bash
+
+# If huggingface is not installed, you must to install it first.
+
+echo "Login to huggingface"
+
 huggingface-cli login
 
 echo "Downloading SD 3 model"
