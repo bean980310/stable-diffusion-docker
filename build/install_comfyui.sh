@@ -22,5 +22,10 @@ git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack.git custom_nodes/Comfy
 git clone https://github.com/ltdrdata/ComfyUI-Inspire-Pack.git custom_nodes/ComfyUI-Inspire-Pack
 cd custom_nodes/ComfyUI-Manager
 pip3 install -r requirements.txt
+cd /ComfyUI/custom_nodes/ComfyUI-Impact-Pack
+pip3 install -r requirements.txt
+python3 -m install
+cd /ComfyUI/custom_nodes/ComfyUI-Inspire-Pack
+pip3 install -r requirements.txt
 pip3 cache purge
 deactivate
