@@ -174,3 +174,11 @@ wget https://huggingface.co/bdsqlsz/qinglong_controlnet-lllite/resolve/main/bdsq
 wget https://huggingface.co/bdsqlsz/qinglong_controlnet-lllite/resolve/main/bdsqlsz_controlllite_xl_tile_anime_alpha.safetensors
 wget https://huggingface.co/bdsqlsz/qinglong_controlnet-lllite/resolve/main/bdsqlsz_controlllite_xl_tile_anime_beta.safetensors
 wget https://huggingface.co/bdsqlsz/qinglong_controlnet-lllite/resolve/main/bdsqlsz_controlllite_xl_tile_realistic.safetensors
+
+echo "Downloading SD 1.5 LoRA"
+cd /workspace/stable-diffusion-webui/models/Lora/SD15
+wget -O lcm-lora-sdv1-5.safetensors https://huggingface.co/latent-consistency/lcm-lora-sdv1-5/resolve/main/pytorch_lora_weights.safetensors
+
+echo "Downloading SD XL LoRA"
+cd /workspace/stable-diffusion-webui/models/Lora/SDXL
+wget -O lcm-lora-sdxl.safetensors https://huggingface.co/latent-consistency/lcm-lora-sdxl/resolve/main/pytorch_lora_weights.safetensors
