@@ -12,11 +12,10 @@ docker run -d \
   -p 8888:8888 \
   -p 9090:9090 \
   -e JUPYTER_PASSWORD=Jup1t3R! \
-  -e JUPYTER_LAB_PASSWORD=Jup1t3R! \
   -e ENABLE_TENSORBOARD=1 \
   bean980310/stable-diffusion-webui:1.1.0
 
-먼저 실행하고(단, JUPYTER_LAB_PASSWORD는 값을 변경)
+먼저 실행하고
 
 docker ps
 
@@ -46,10 +45,10 @@ sudo 권한을 획득하고 싶으면
 (유저명) ALL=(ALL:ALL) ALL
 추가
 
-jupyter notebook/lab 비밀번호도 바꾸는게 좋습니다.
+jupyter server 비밀번호도 바꾸는게 좋습니다.
 
 ipython
-from notebook.auto import passwd
+from jupyter_server.auth import passwd
 passwd()
 Enter password:(비밀번호 입력)
 Verify password:(같은 비밀번호 또 입력)
@@ -58,13 +57,11 @@ Verify password:(같은 비밀번호 또 입력)
 
 그리고
 
-.jupyter/jupyter_notebook_config.py
-혹은
-.jupyter/jupyter_lab_config.py
+.jupyter/jupyter_server_config.py
 파일을 열고
 
 c = get_config()
 바로 밑에
-c.NotebookApp.password = (암호화된 값 넣기)
+c.ServerApp.password = (암호화된 값 넣기)
 
 도커 컨테이너에서 암호화폐 채굴하는 놈들에게 당하기 싫으면 꼭 읽으시오 두번 읽으시오(경험담임)

@@ -102,6 +102,10 @@ pip3 install polygraphy --extra-index-url https://pypi.ngc.nvidia.com
 pip3 install onnx-graphsurgeon --extra-index-url https://pypi.ngc.nvidia.com
 pip3 install install optimum
 pip3 cache purge
+
+# Install ChatGPT extension
+pip3 install langchain-community langchain-core
+pip3 cache purge
 deactivate
 
 # Add inswapper model for the ReActor extension
