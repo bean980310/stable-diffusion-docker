@@ -63,5 +63,6 @@ Verify password:(같은 비밀번호 또 입력)
 c = get_config()
 바로 밑에
 c.ServerApp.password = (암호화된 값 넣기)
+c.ServerApp.password_required = True
 
 도커 컨테이너에서 암호화폐 채굴하는 놈들에게 당하기 싫으면 꼭 읽으시오 두번 읽으시오(경험담임)
