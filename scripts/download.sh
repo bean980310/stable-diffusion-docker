@@ -41,10 +41,14 @@ wget https://huggingface.co/runwayml/stable-diffusion-inpainting/resolve/main/sd
 # cd /workspace/stable-diffusion-webui/models/Stable-diffusion
 # wget https://civitai.com/api/download/models/384264?token= --content-disposition
 # wget https://huggingface.co/cagliostrolab/animagine-xl-3.1/resolve/main/animagine-xl-3.1.safetensors
-# wget https://civitai.com/api/download/models/324619?token= --content-disposition
 # wget https://civitai.com/api/download/models/412021?token= --content-disposition
 # wget https://civitai.com/api/download/models/546178?token= --content-disposition
 # wget https://huggingface.co/gsdf/CounterfeitXL-V2.0/resolve/main/CounterfeitXL-V2.5.safetensors
+
+# echo "Downloading Pony based model"
+# cd /workspace/stable-diffusion-webui/models/Stable-diffusion
+# wget -O ponyDiffusionV6XL_v6StartWithThisOne.safetensors https://civitai.com/api/download/models/290640?type=Model&format=SafeTensor&size=pruned&fp=fp16&token=
+# wget https://civitai.com/api/download/models/324619?token= --content-disposition
 
 # echo "Downloading SD 3 model"
 # cd /workspace/stable-diffusion-webui/models/Stable-diffusion
