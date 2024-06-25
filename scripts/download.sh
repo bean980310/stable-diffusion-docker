@@ -75,6 +75,7 @@ echo "Downloading Pony based model"
 cd /workspace/stable-diffusion-webui/models/Stable-diffusion/Pony
 wget -O ponyDiffusionV6XL_v6StartWithThisOne.safetensors https://civitai.com/api/download/models/290640?type=Model&format=SafeTensor&size=pruned&fp=fp16&token=
 wget https://civitai.com/api/download/models/324619?token= --content-disposition
+wget https://civitai.com/api/download/models/441236?token= --content-disposition
 
 # echo "Downloading SD 3 model"
 # cd /workspace/stable-diffusion-webui/models/Stable-diffusion/SD3
