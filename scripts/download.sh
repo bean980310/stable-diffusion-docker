@@ -22,7 +22,7 @@ mkdir SD15
 mkdir SDXL
 mkdir Pony
 
-cd /workspace/stable-diffusion-webui/embaddings
+cd /workspace/stable-diffusion-webui/embeddings
 mkdir SD15
 mkdir SDXL
 
