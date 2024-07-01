@@ -89,7 +89,7 @@ cd /stable-diffusion-webui/extensions/sd_dreambooth_extension
 pip3 install -r requirements.txt
 pip3 cache purge
 
-# Install dependencies for TensorRT extension \
+# Install dependencies for TensorRT extension
 cd /stable-diffusion-webui/extensions/Stable-Diffusion-WebUI-TensorRT
 pip3 install importlib_metadata
 pip3 uninstall -y tensorrt

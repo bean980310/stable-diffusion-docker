@@ -23,7 +23,7 @@ variable "BASE_IMAGE_REPOSITORY" {
 }
 
 variable "BASE_IMAGE_VERSION" {
-    default = "1.3.0"
+    default = "1.6.0"
 }
 
 variable "CUDA_VERSION" {
@@ -44,13 +44,14 @@ target "default" {
         TORCH_VERSION = "${TORCH_VERSION}+cu${CU_VERSION}"
         XFORMERS_VERSION = "0.0.26.post1"
         WEBUI_VERSION = "v1.9.4"
-        CONTROLNET_COMMIT = "59c43499ea6121aea2e49efd6394975d430e936e"
+        CONTROLNET_COMMIT = "8bbbd0e55ef6e5d71b09c2de2727b36e7bc825b0"
         DREAMBOOTH_COMMIT = "45a12fe5950bf93205b6ef2b7511eb94052a241f"
         CIVITAI_BROWSER_PLUS_VERSION = "v3.5.4"
         KOHYA_VERSION = "v24.1.4"
         KOHYA_TORCH_VERSION = "2.1.2+cu${CU_VERSION}"
         KOHYA_XFORMERS_VERSION = "0.0.23.post1"
-        INVOKEAI_VERSION = "4.2.4"
+        COMFYUI_COMMIT = "dbb7dd3b5eb6672e1141a5fc7006d3bee08b0d21"
+        INVOKEAI_VERSION = "4.2.5"
         APP_MANAGER_VERSION = "1.1.0"
         CIVITAI_DOWNLOADER_VERSION = "2.1.0"
         VENV_PATH = "/workspace/venvs/${APP}"
