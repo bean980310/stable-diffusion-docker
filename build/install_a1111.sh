@@ -37,7 +37,7 @@ git clone https://github.com/pharmapsychotic/clip-interrogator-ext.git extension
 git clone https://github.com/feynlee/latent-upscale.git extensions/latent-upscale
 git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111.git extensions/multidiffusion-upscaler-for-automatic1111
 git clone https://github.com/adieyal/sd-dynamic-prompts.git extensions/sd-dynamic-prompts
-git clone https://github.com/mcmonkeyprojects/sd-dynamic-thresholding.git extensions/sd-dynamic-thresholding
+git clone --depth=1 https://github.com/mcmonkeyprojects/sd-dynamic-thresholding extensions/sd-dynamic-thresholding
 git clone https://github.com/kohya-ss/sd-webui-additional-networks.git extensions/sd-webui-additional-networks
 git clone https://github.com/NON906/sd-webui-chatgpt.git extensions/sd-webui-chatgpt
 git clone https://github.com/hako-mikan/sd-webui-lora-block-weight.git extensions/sd-webui-lora-block-weight
