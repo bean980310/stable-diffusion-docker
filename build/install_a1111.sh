@@ -47,10 +47,7 @@ git clone https://github.com/opparco/stable-diffusion-webui-composable-lora.git 
 git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111.git extensions/ultimate-upscale-for-automatic1111
 git clone https://github.com/continue-revolution/sd-webui-animatediff.git extensions/sd-webui-animatediff
 
-# Install dependencies for Deforum, ControlNet, ReActor, Infinite Image Browsing,
-# After Detailer, and CivitAI Browser+ extensions
-#pip3 install basicsr
-# pip3 install --upgrade setuptools
+# Install dependencies for the various extensions
 cd /stable-diffusion-webui/extensions/sd-webui-controlnet
 pip3 install -r requirements.txt
 cd /stable-diffusion-webui/extensions/deforum
