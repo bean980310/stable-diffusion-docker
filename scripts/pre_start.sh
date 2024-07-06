@@ -54,26 +54,86 @@ fix_venvs() {
     /fix_venv.sh /ComfyUI/venv /workspace/ComfyUI/venv
 }
 
-# link_models() {
+link_models() {
+    ln -s /sd-models/Stable-diffusion/SD15/* /workspace/stable-diffusion-webui/models/Stable-diffusion/SD15/
+    ln -s /sd-models/Stable-diffusion/SDXL/* /workspace/stable-diffusion-webui/models/Stable-diffusion/SDXL/
+    ln -s /sd-models/Stable-diffusion/Pony/* /workspace/stable-diffusion-webui/models/Stable-diffusion/Pony/
+    ln -s /sd-models/Stable-diffusion/upscale/* /workspace/stable-diffusion-webui/models/Stable-diffusion/upscale/
+
+    ln -s /sd-models/VAE/SD15/* /workspace/stable-diffusion-webui/models/VAE/SD15/
+    ln -s /sd-models/VAE/SDXL/* /workspace/stable-diffusion-webui/models/VAE/SDXL/
+
+    ln -s /sd-models/ControlNet/SD15/* /workspace/stable-diffusion-webui/models/ControlNet/SD15/
+    ln -s /sd-models/ControlNet/SDXL/* /workspace/stable-diffusion-webui/models/ControlNet/SDXL/
+
+    ln -s /sd-models/Lora/SD15/* /workspace/stable-diffusion-webui/models/Lora/SD15/
+    ln -s /sd-models/Lora/SDXL/* /workspace/stable-diffusion-webui/models/Lora/SDXL/
+    ln -s /sd-models/Lora/Pony/* /workspace/stable-diffusion-webui/models/Lora/Pony/
+
+    ln -s /sd-models/embeddings/SD15/* /workspace/stable-diffusion-webui/embeddings/SD15/
+    ln -s /sd-models/embeddings/SDXL/* /workspace/stable-diffusion-webui/embeddings/SDXL/
+
+    ln -s /sd-models/ESRGAN/* /workspace/stable-diffusion-webui/models/ESRGAN/
+
 #    # Link models and VAE if they are not already linked
-#    if [[ ! -L /workspace/stable-diffusion-webui/models/Stable-diffusion/sd_xl_base_1.0.safetensors ]]; then
-#        ln -s /sd-models/sd_xl_base_1.0.safetensors /workspace/stable-diffusion-webui/models/Stable-diffusion/sd_xl_base_1.0.safetensors
+#    if [[ ! -L /workspace/stable-diffusion-webui/models/Stable-diffusion/SD15/v1-5-pruned-emaonly.safetensors ]]; then
+#        ln -s /sd-models/v1-5-pruned-emaonly.safetensors /workspace/stable-diffusion-webui/models/Stable-diffusion/SD15/v1-5-pruned-emaonly.safetensors
 #    fi
 
-#    if [[ ! -L /workspace/stable-diffusion-webui/models/Stable-diffusion/sd_xl_refiner_1.0.safetensors ]]; then
-#        ln -s /sd-models/sd_xl_refiner_1.0.safetensors /workspace/stable-diffusion-webui/models/Stable-diffusion/sd_xl_refiner_1.0.safetensors
+#    if [[ ! -L /workspace/stable-diffusion-webui/models/Stable-diffusion/SD15/sd-v1-5-inpainting.ckpt ]]; then
+#        ln -s /sd-models/sd-v1-5-inpainting.ckpt /workspace/stable-diffusion-webui/models/Stable-diffusion/SD15/sd-v1-5-inpainting.ckpt
 #    fi
 
-#    if [[ ! -L /workspace/stable-diffusion-webui/models/VAE/sdxl_vae.safetensors ]]; then
-#        ln -s /sd-models/sdxl_vae.safetensors /workspace/stable-diffusion-webui/models/VAE/sdxl_vae.safetensors
+#    if [[ ! -L /workspace/stable-diffusion-webui/models/VAE/SD15/vae-ft-mse-840000-ema-pruned.safetensors ]]; then
+#        ln -s /sd-models/vae-ft-mse-840000-ema-pruned.safetensors /workspace/stable-diffusion-webui/models/VAE/SD15/vae-ft-mse-840000-ema-pruned.safetensors
 #    fi
-# }
+#    if [[ ! -L /workspace/stable-diffusion-webui/models/Stable-diffusion/SDXL/sd_xl_base_1.0.safetensors ]]; then
+#        ln -s /sd-models/sd_xl_base_1.0.safetensors /workspace/stable-diffusion-webui/models/Stable-diffusion/SDXL/sd_xl_base_1.0.safetensors
+#    fi
+
+#    if [[ ! -L /workspace/stable-diffusion-webui/models/Stable-diffusion/SDXL/sd_xl_refiner_1.0.safetensors ]]; then
+#        ln -s /sd-models/sd_xl_refiner_1.0.safetensors /workspace/stable-diffusion-webui/models/Stable-diffusion/SDXL/sd_xl_refiner_1.0.safetensors
+#    fi
+
+#    if [[ ! -L /workspace/stable-diffusion-webui/models/VAE/SDXL/sdxl_vae.safetensors ]]; then
+#        ln -s /sd-models/sdxl_vae.safetensors /workspace/stable-diffusion-webui/models/VAE/SDXL/sdxl_vae.safetensors
+#    fi
+}
+
+generate_directory() {
+    # cd /workspace/stable-diffusion-webui/models/Stable-diffusion
+    # mkdir /workspace/stable-diffusion-webui/models/Stable-diffusion/SD14
+    mkdir /workspace/stable-diffusion-webui/models/Stable-diffusion/SD15
+    # mkdir /workspace/stable-diffusion-webui/models/Stable-diffusion/SD2
+    mkdir /workspace/stable-diffusion-webui/models/Stable-diffusion/SDXL
+    mkdir /workspace/stable-diffusion-webui/models/Stable-diffusion/Pony
+    # mkdir /workspace/stable-diffusion-webui/models/Stable-diffusion/SD3
+    mkdir /workspace/stable-diffusion-webui/models/Stable-diffusion/upscale
+
+    # cd /workspace/stable-diffusion-webui/models/VAE
+    mkdir /workspace/stable-diffusion-webui/models/VAE/SD15
+    mkdir /workspace/stable-diffusion-webui/models/VAE/SDXL
+
+    # cd /workspace/stable-diffusion-webui/models/ControlNet
+    mkdir /workspace/stable-diffusion-webui/models/ControlNet/SD15
+    mkdir /workspace/stable-diffusion-webui/models/ControlNet/SDXL
+
+    # cd /workspace/stable-diffusion-webui/models/Lora
+    mkdir /workspace/stable-diffusion-webui/models/Lora/SD15
+    mkdir /workspace/stable-diffusion-webui/models/Lora/SDXL
+    mkdir /workspace/stable-diffusion-webui/models/Lora/Pony
+
+    # cd /workspace/stable-diffusion-webui/embeddings
+    mkdir /workspace/stable-diffusion-webui/embeddings/SD15
+    mkdir /workspace/stable-diffusion-webui/embeddings/SDXL
+}
 
 if [ "$(printf '%s\n' "$EXISTING_VERSION" "$TEMPLATE_VERSION" | sort -V | head -n 1)" = "$EXISTING_VERSION" ]; then
     if [ "$EXISTING_VERSION" != "$TEMPLATE_VERSION" ]; then
         sync_apps
         fix_venvs
-        # link_models
+        generate_directory
+        link_models
 
         # Add VENV_PATH to webui-user.sh
         sed -i "s|venv_dir=VENV_PATH|venv_dir=${VENV_PATH}\"\"|" /workspace/stable-diffusion-webui/webui-user.sh

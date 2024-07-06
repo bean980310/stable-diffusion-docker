@@ -46,6 +46,10 @@ git clone https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper.
 git clone https://github.com/opparco/stable-diffusion-webui-composable-lora.git extensions/stable-diffusion-webui-composable-lora
 git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111.git extensions/ultimate-upscale-for-automatic1111
 git clone https://github.com/continue-revolution/sd-webui-animatediff.git extensions/sd-webui-animatediff
+git clone https://github.com/AlUlkesh/stable-diffusion-webui-images-browser.git extensions/stable-diffusion-webui-images-browser
+git clone https://github.com/camenduru/stable-diffusion-webui-huggingface.git extensions/stable-diffusion-webui-huggingface
+git clone https://github.com/KutsuyaYuki/ABG_extension.git extensions/ABG_extension
+git clone https://github.com/Iyashinouta/sd-model-downloader.git extensions/sd-model-downloader
 
 # Install dependencies for the various extensions
 cd /stable-diffusion-webui/extensions/sd-webui-controlnet
@@ -102,7 +106,10 @@ pip3 install onnx-graphsurgeon --extra-index-url https://pypi.ngc.nvidia.com
 pip3 install install optimum
 pip3 cache purge
 
-# Install ChatGPT extension
+# Install dependencies for huggingface extension
+pip3 install huggingface huggingface-hub
+
+# Install dependencies for ChatGPT extension
 pip3 install langchain-community langchain-core
 pip3 cache purge
 deactivate
