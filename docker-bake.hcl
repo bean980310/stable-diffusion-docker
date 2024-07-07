@@ -11,7 +11,7 @@ variable "APP" {
 }
 
 variable "RELEASE" {
-    default = "1.1.4"
+    default = "1.2.0"
 }
 
 variable "CU_VERSION" {
@@ -19,11 +19,11 @@ variable "CU_VERSION" {
 }
 
 variable "BASE_IMAGE_REPOSITORY" {
-    default = "ashleykza/runpod-base"
+    default = "bean980310/ubuntu-docker"
 }
 
 variable "BASE_IMAGE_VERSION" {
-    default = "1.7.0"
+    default = "1.0.0"
 }
 
 variable "CUDA_VERSION" {
