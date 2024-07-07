@@ -55,25 +55,25 @@ fix_venvs() {
 }
 
 link_models() {
-    ln -s /sd-models/Stable-diffusion/SD15/* /workspace/stable-diffusion-webui/models/Stable-diffusion/SD15/
-    ln -s /sd-models/Stable-diffusion/SDXL/* /workspace/stable-diffusion-webui/models/Stable-diffusion/SDXL/
-    ln -s /sd-models/Stable-diffusion/Pony/* /workspace/stable-diffusion-webui/models/Stable-diffusion/Pony/
-    ln -s /sd-models/Stable-diffusion/upscale/* /workspace/stable-diffusion-webui/models/Stable-diffusion/upscale/
+    ln -s /sd-models/Stable-diffusion/SD15 /workspace/stable-diffusion-webui/models/Stable-diffusion/SD15
+    ln -s /sd-models/Stable-diffusion/SDXL /workspace/stable-diffusion-webui/models/Stable-diffusion/SDXL
+    ln -s /sd-models/Stable-diffusion/Pony /workspace/stable-diffusion-webui/models/Stable-diffusion/Pony
+    ln -s /sd-models/Stable-diffusion/upscale /workspace/stable-diffusion-webui/models/Stable-diffusion/upscale
 
-    ln -s /sd-models/VAE/SD15/* /workspace/stable-diffusion-webui/models/VAE/SD15/
-    ln -s /sd-models/VAE/SDXL/* /workspace/stable-diffusion-webui/models/VAE/SDXL/
+    ln -s /sd-models/VAE/SD15 /workspace/stable-diffusion-webui/models/VAE/SD15
+    ln -s /sd-models/VAE/SDXL /workspace/stable-diffusion-webui/models/VAE/SDXL
 
-    ln -s /sd-models/ControlNet/SD15/* /workspace/stable-diffusion-webui/models/ControlNet/SD15/
-    ln -s /sd-models/ControlNet/SDXL/* /workspace/stable-diffusion-webui/models/ControlNet/SDXL/
+    ln -s /sd-models/ControlNet/SD15 /workspace/stable-diffusion-webui/models/ControlNet/SD15
+    ln -s /sd-models/ControlNet/SDXL /workspace/stable-diffusion-webui/models/ControlNet/SDXL
 
-    ln -s /sd-models/Lora/SD15/* /workspace/stable-diffusion-webui/models/Lora/SD15/
-    ln -s /sd-models/Lora/SDXL/* /workspace/stable-diffusion-webui/models/Lora/SDXL/
-    ln -s /sd-models/Lora/Pony/* /workspace/stable-diffusion-webui/models/Lora/Pony/
+    ln -s /sd-models/Lora/SD15 /workspace/stable-diffusion-webui/models/Lora/SD15
+    ln -s /sd-models/Lora/SDXL /workspace/stable-diffusion-webui/models/Lora/SDXL
+    ln -s /sd-models/Lora/Pony /workspace/stable-diffusion-webui/models/Lora/Pony
 
-    ln -s /sd-models/embeddings/SD15/* /workspace/stable-diffusion-webui/embeddings/SD15/
-    ln -s /sd-models/embeddings/SDXL/* /workspace/stable-diffusion-webui/embeddings/SDXL/
+    ln -s /sd-models/embeddings/SD15 /workspace/stable-diffusion-webui/embeddings/SD15
+    ln -s /sd-models/embeddings/SDXL /workspace/stable-diffusion-webui/embeddings/SDXL
 
-    ln -s /sd-models/ESRGAN/* /workspace/stable-diffusion-webui/models/ESRGAN/
+    ln -s /sd-models/ESRGAN /workspace/stable-diffusion-webui/models/ESRGAN
 
 #    # Link models and VAE if they are not already linked
 #    if [[ ! -L /workspace/stable-diffusion-webui/models/Stable-diffusion/SD15/v1-5-pruned-emaonly.safetensors ]]; then
@@ -132,7 +132,7 @@ if [ "$(printf '%s\n' "$EXISTING_VERSION" "$TEMPLATE_VERSION" | sort -V | head -
     if [ "$EXISTING_VERSION" != "$TEMPLATE_VERSION" ]; then
         sync_apps
         fix_venvs
-        generate_directory
+        # generate_directory
         link_models
 
         # Add VENV_PATH to webui-user.sh
