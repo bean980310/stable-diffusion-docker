@@ -42,7 +42,7 @@ echo "Downloading SD XL VAE"
 wget -P sd-models/VAE/SDX -N https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/resolve/main/sdxl_vae.safetensors
 
 echo "Downloading SD 1.5 LoRA"
-wget -P sd-models/Lora/SD15 -O lcm-lora-sdv1-5.safetensors -N https://huggingface.co/latent-consistency/lcm-lora-sdv1-5/resolve/main/pytorch_lora_weights.safetensors
+wget -O sd-models/Lora/SD15/lcm-lora-sdv1-5.safetensors -N https://huggingface.co/latent-consistency/lcm-lora-sdv1-5/resolve/main/pytorch_lora_weights.safetensors
 
 echo "Downloading SD XL LoRA"
-wget -P sd-models/Lora/SDXL -O lcm-lora-sdxl.safetensors -N https://huggingface.co/latent-consistency/lcm-lora-sdxl/resolve/main/pytorch_lora_weights.safetensors
+wget -O sd-models/Lora/SDXL/lcm-lora-sdxl.safetensors -N https://huggingface.co/latent-consistency/lcm-lora-sdxl/resolve/main/pytorch_lora_weights.safetensors

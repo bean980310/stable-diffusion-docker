@@ -24,8 +24,8 @@ wget -P sd-models/ControlNet/SDXL -N https://huggingface.co/stabilityai/control-
 wget -P sd-models/ControlNet/SDXL -N https://huggingface.co/stabilityai/control-lora/resolve/main/control-LoRAs-rank256/control-lora-recolor-rank256.safetensors
 wget -P sd-models/ControlNet/SDXL -N https://huggingface.co/stabilityai/control-lora/resolve/main/control-LoRAs-rank256/control-lora-sketch-rank256.safetensors
 
-wget -P sd-models/ControlNet/SDXL -O controlnet-canny-sdxl-1.0_fp16.safetensors -N https://huggingface.co/diffusers/controlnet-canny-sdxl-1.0/resolve/main/diffusion_pytorch_model.fp16.safetensors
-wget -P sd-models/ControlNet/SDXL -O controlnet-depth-sdxl-1.0_fp16.safetensors -N https://huggingface.co/diffusers/controlnet-depth-sdxl-1.0/resolve/main/diffusion_pytorch_model.fp16.safetensors
+wget -O sd-models/ControlNet/SDXL/controlnet-canny-sdxl-1.0_fp16.safetensors -N https://huggingface.co/diffusers/controlnet-canny-sdxl-1.0/resolve/main/diffusion_pytorch_model.fp16.safetensors
+wget -O sd-models/ControlNet/SDXL/controlnet-depth-sdxl-1.0_fp16.safetensors -N https://huggingface.co/diffusers/controlnet-depth-sdxl-1.0/resolve/main/diffusion_pytorch_model.fp16.safetensors
 
 # wget -P sd-models/ControlNet/SDXL -N https://huggingface.co/kohya-ss/controlnet-lllite/resolve/main/controllllite_v01008016e_sdxl_depth_anime.safetensors
 # wget -P sd-models/ControlNet/SDXL -N https://huggingface.co/kohya-ss/controlnet-lllite/resolve/main/controllllite_v01016032e_sdxl_replicate_anime_0-500.safetensors
@@ -39,7 +39,7 @@ wget -P sd-models/ControlNet/SDXL -O controlnet-depth-sdxl-1.0_fp16.safetensors 
 # wget -P sd-models/ControlNet/SDXL -N https://huggingface.co/kohya-ss/controlnet-lllite/resolve/main/controllllite_v01032064e_sdxl_canny.safetensors
 # wget -P sd-models/ControlNet/SDXL -N https://huggingface.co/kohya-ss/controlnet-lllite/resolve/main/controllllite_v01032064e_sdxl_depth_500-1000.safetensors
 
-wget -P sd-models/ControlNet/SDXL -O controlnet-inpaint-dreamer-sdxl.safetensors -N https://huggingface.co/destitech/controlnet-inpaint-dreamer-sdxl/resolve/main/v2/diffusion_pytorch_model.fp16.safetensors
+wget  -O sd-models/ControlNet/SDXL/controlnet-inpaint-dreamer-sdxl.safetensors -N https://huggingface.co/destitech/controlnet-inpaint-dreamer-sdxl/resolve/main/v2/diffusion_pytorch_model.fp16.safetensors
 
 wget -P sd-models/ControlNet/SDXL -N https://huggingface.co/kataragi/controlnet_canny/resolve/main/Kataragi_cannyXL-fp16.safetensors
 wget -P sd-models/ControlNet/SDXL -N https://huggingface.co/kataragi/flatline/resolve/main/diffusers_xl_flatline_testXL-fp16.safetensors
