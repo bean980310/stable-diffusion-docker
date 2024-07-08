@@ -3,32 +3,32 @@
 ARG BASE_IMAGE
 FROM ${BASE_IMAGE} AS base
 
-RUN mkdir -p /sd-models
+# RUN mkdir -p /sd-models
 
-RUN mkdir /sd-models/Stable-diffusion
-RUN mkdir /sd-models/VAE
-RUN mkdir /sd-models/ControlNet
-RUN mkdir /sd-models/Lora
-RUN mkdir /sd-models/embeddings
-RUN mkdir /sd-models/ESRGAN
+# RUN mkdir /sd-models/Stable-diffusion
+# RUN mkdir /sd-models/VAE
+# RUN mkdir /sd-models/ControlNet
+# RUN mkdir /sd-models/Lora
+# RUN mkdir /sd-models/embeddings
+# RUN mkdir /sd-models/ESRGAN
 
-RUN mkdir /sd-models/Stable-diffusion/SD15
-RUN mkdir /sd-models/Stable-diffusion/SDXL
-RUN mkdir /sd-models/Stable-diffusion/Pony
-RUN mkdir /sd-models/Stable-diffusion/upscale
+# RUN mkdir /sd-models/Stable-diffusion/SD15
+# RUN mkdir /sd-models/Stable-diffusion/SDXL
+# RUN mkdir /sd-models/Stable-diffusion/Pony
+# RUN mkdir /sd-models/Stable-diffusion/upscale
 
-RUN mkdir /sd-models/VAE/SD15
-RUN mkdir /sd-models/VAE/SDXL
+# RUN mkdir /sd-models/VAE/SD15
+# RUN mkdir /sd-models/VAE/SDXL
 
-RUN mkdir /sd-models/ControlNet/SD15
-RUN mkdir /sd-models/ControlNet/SDXL
+# RUN mkdir /sd-models/ControlNet/SD15
+# RUN mkdir /sd-models/ControlNet/SDXL
 
-RUN mkdir /sd-models/Lora/SD15
-RUN mkdir /sd-models/Lora/SDXL
-RUN mkdir /sd-models/Lora/Pony
+# RUN mkdir /sd-models/Lora/SD15
+# RUN mkdir /sd-models/Lora/SDXL
+# RUN mkdir /sd-models/Lora/Pony
 
-RUN mkdir /sd-models/embeddings/SD15
-RUN mkdir /sd-models/embeddings/SDXL
+# RUN mkdir /sd-models/embeddings/SD15
+# RUN mkdir /sd-models/embeddings/SDXL
 
 # Add SDXL models and VAE
 # These need to already have been downloaded:
@@ -42,25 +42,25 @@ RUN mkdir /sd-models/embeddings/SDXL
 # COPY sd_xl_refiner_1.0.safetensors /sd-models/sd_xl_refiner_1.0.safetensors
 # COPY sdxl_vae.safetensors /sd-models/sdxl_vae.safetensors
 
-COPY sd-models/Stable-diffusion/SD15/* /sd-models/Stable-diffusion/SD15/
-COPY sd-models/Stable-diffusion/SDXL/* /sd-models/Stable-diffusion/SDXL/
-COPY sd-models/Stable-diffusion/Pony/* /sd-models/Stable-diffusion/Pony/
-COPY sd-models/Stable-diffusion/upscale/* /sd-models/Stable-diffusion/upscale/
+# COPY sd-models/Stable-diffusion/SD15/* /sd-models/Stable-diffusion/SD15/
+# COPY sd-models/Stable-diffusion/SDXL/* /sd-models/Stable-diffusion/SDXL/
+# COPY sd-models/Stable-diffusion/Pony/* /sd-models/Stable-diffusion/Pony/
+# COPY sd-models/Stable-diffusion/upscale/* /sd-models/Stable-diffusion/upscale/
 
-COPY sd-models/VAE/SD15/* /sd-models/VAE/SD15/
-COPY sd-models/VAE/SDXL/* /sd-models/VAE/SDXL/
+# COPY sd-models/VAE/SD15/* /sd-models/VAE/SD15/
+# COPY sd-models/VAE/SDXL/* /sd-models/VAE/SDXL/
 
-COPY sd-models/ControlNet/SD15/* /sd-models/ControlNet/SD15/
-COPY sd-models/ControlNet/SDXL/* /sd-models/ControlNet/SDXL/
+# COPY sd-models/ControlNet/SD15/* /sd-models/ControlNet/SD15/
+# COPY sd-models/ControlNet/SDXL/* /sd-models/ControlNet/SDXL/
 
-COPY sd-models/Lora/SD15/* /sd-models/Lora/SD15/
-COPY sd-models/Lora/SDXL/* /sd-models/Lora/SDXL/
-COPY sd-models/Lora/Pony/* /sd-models/Lora/Pony/
+# COPY sd-models/Lora/SD15/* /sd-models/Lora/SD15/
+# COPY sd-models/Lora/SDXL/* /sd-models/Lora/SDXL/
+# COPY sd-models/Lora/Pony/* /sd-models/Lora/Pony/
 
-COPY sd-models/embeddings/SD15/* /sd-models/embeddings/SD15/
-COPY sd-models/embeddings/SDXL/* /sd-models/embeddings/SDXL/
+# COPY sd-models/embeddings/SD15/* /sd-models/embeddings/SD15/
+# COPY sd-models/embeddings/SDXL/* /sd-models/embeddings/SDXL/
 
-COPY sd-models/ESRGAN/* /sd-models/ESRGAN/
+# COPY sd-models/ESRGAN/* /sd-models/ESRGAN/
 
 WORKDIR /
 

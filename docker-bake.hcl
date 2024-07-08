@@ -11,7 +11,7 @@ variable "APP" {
 }
 
 variable "RELEASE" {
-    default = "1.2.0"
+    default = "1.3.0"
 }
 
 variable "CU_VERSION" {
@@ -19,7 +19,7 @@ variable "CU_VERSION" {
 }
 
 variable "BASE_IMAGE_REPOSITORY" {
-    default = "bean980310/ubuntu-docker"
+    default = "bean980310/stable-diffusion-docker-base"
 }
 
 variable "BASE_IMAGE_VERSION" {
