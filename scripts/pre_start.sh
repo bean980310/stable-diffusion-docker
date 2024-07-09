@@ -55,25 +55,53 @@ fix_venvs() {
 }
 
 link_models() {
-    ln -s /sd-models/Stable-diffusion/SD15 /workspace/stable-diffusion-webui/models/Stable-diffusion/SD15
-    ln -s /sd-models/Stable-diffusion/SDXL /workspace/stable-diffusion-webui/models/Stable-diffusion/SDXL
-    ln -s /sd-models/Stable-diffusion/Pony /workspace/stable-diffusion-webui/models/Stable-diffusion/Pony
-    ln -s /sd-models/Stable-diffusion/upscale /workspace/stable-diffusion-webui/models/Stable-diffusion/upscale
+    if [[ ! -L /workspace/stable-diffusion-webui/models/Stable-diffusion/SD15 ]]; then
+        ln -s /sd-models/Stable-diffusion/SD15 /workspace/stable-diffusion-webui/models/Stable-diffusion/SD15
+    fi
+    if [[ ! -L /workspace/stable-diffusion-webui/models/Stable-diffusion/SDXL ]]; then
+        ln -s /sd-models/Stable-diffusion/SDXL /workspace/stable-diffusion-webui/models/Stable-diffusion/SDXL
+    fi
+    if [[ ! -L /workspace/stable-diffusion-webui/models/Stable-diffusion/Pony ]]; then
+        ln -s /sd-models/Stable-diffusion/Pony /workspace/stable-diffusion-webui/models/Stable-diffusion/Pony
+    fi
+    if [[ ! -L /workspace/stable-diffusion-webui/models/Stable-diffusion/upscale ]]; then
+        ln -s /sd-models/Stable-diffusion/upscale /workspace/stable-diffusion-webui/models/Stable-diffusion/upscale
+    fi
 
-    ln -s /sd-models/VAE/SD15 /workspace/stable-diffusion-webui/models/VAE/SD15
-    ln -s /sd-models/VAE/SDXL /workspace/stable-diffusion-webui/models/VAE/SDXL
+    if [[ ! -L /workspace/stable-diffusion-webui/models/VAE/SD15 ]]; then
+        ln -s /sd-models/VAE/SD15 /workspace/stable-diffusion-webui/models/VAE/SD15
+    fi
+    if [[ ! -L /workspace/stable-diffusion-webui/models/VAE/SDXL ]]; then
+        ln -s /sd-models/VAE/SDXL /workspace/stable-diffusion-webui/models/VAE/SDXL
+    fi
 
-    ln -s /sd-models/ControlNet/SD15 /workspace/stable-diffusion-webui/models/ControlNet/SD15
-    ln -s /sd-models/ControlNet/SDXL /workspace/stable-diffusion-webui/models/ControlNet/SDXL
+    if [[ ! -L /workspace/stable-diffusion-webui/models/ControlNet/SD15 ]]; then
+        ln -s /sd-models/ControlNet/SD15 /workspace/stable-diffusion-webui/models/ControlNet/SD15
+    fi
+    if [[ ! -L /workspace/stable-diffusion-webui/models/ControlNet/SDXL ]]; then
+        ln -s /sd-models/ControlNet/SDXL /workspace/stable-diffusion-webui/models/ControlNet/SDXL
+    fi
 
-    ln -s /sd-models/Lora/SD15 /workspace/stable-diffusion-webui/models/Lora/SD15
-    ln -s /sd-models/Lora/SDXL /workspace/stable-diffusion-webui/models/Lora/SDXL
-    ln -s /sd-models/Lora/Pony /workspace/stable-diffusion-webui/models/Lora/Pony
+    if [[ ! -L /workspace/stable-diffusion-webui/models/Lora/SD15 ]]; then
+        ln -s /sd-models/Lora/SD15 /workspace/stable-diffusion-webui/models/Lora/SD15
+    fi
+    if [[ ! -L /workspace/stable-diffusion-webui/models/Lora/SDXL ]]; then
+        ln -s /sd-models/Lora/SDXL /workspace/stable-diffusion-webui/models/Lora/SDXL
+    fi
+    if [[ ! -L /workspace/stable-diffusion-webui/models/Lora/Pony ]]; then
+        ln -s /sd-models/Lora/Pony /workspace/stable-diffusion-webui/models/Lora/Pony
+    fi
 
-    ln -s /sd-models/embeddings/SD15 /workspace/stable-diffusion-webui/embeddings/SD15
-    ln -s /sd-models/embeddings/SDXL /workspace/stable-diffusion-webui/embeddings/SDXL
+    if [[ ! -L /workspace/stable-diffusion-webui/embeddings/SD15 ]]; then
+        ln -s /sd-models/embeddings/SD15 /workspace/stable-diffusion-webui/embeddings/SD15
+    fi
+    if [[ ! -L /workspace/stable-diffusion-webui/embeddings/SDXL ]]; then
+        ln -s /sd-models/embeddings/SDXL /workspace/stable-diffusion-webui/embeddings/SDXL
+    fi
 
-    ln -s /sd-models/ESRGAN /workspace/stable-diffusion-webui/models/ESRGAN
+    if [[ ! -L /workspace/stable-diffusion-webui/models/ESRGAN ]]; then
+        ln -s /sd-models/ESRGAN /workspace/stable-diffusion-webui/models/ESRGAN
+    fi
 
 #    # Link models and VAE if they are not already linked
 #    if [[ ! -L /workspace/stable-diffusion-webui/models/Stable-diffusion/SD15/v1-5-pruned-emaonly.safetensors ]]; then
