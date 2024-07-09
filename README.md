@@ -2,14 +2,9 @@
 
 # Docker image for A1111 Stable Diffusion Web UI, Kohya_ss, ComfyUI and InvokeAI
 
-[![GitHub Repo](https://img.shields.io/badge/github-repo-green?logo=github)](https://github.com/ashleykleynhans/stable-diffusion-docker)
-[![Docker Image Version (latest semver)](https://img.shields.io/docker/v/ashleykza/stable-diffusion-webui?logo=docker&label=dockerhub&color=blue)](https://hub.docker.com/repository/docker/ashleykza/stable-diffusion-webui)
-[![RunPod.io Template](https://img.shields.io/badge/runpod_template-deploy-9b4ce6?logo=linuxcontainers&logoColor=9b4ce6)](https://runpod.io/gsc?template=ya6013lj5a&ref=2xxro4sy)
-<br>
-![Docker Pulls](https://img.shields.io/docker/pulls/ashleykza/stable-diffusion-webui?style=for-the-badge&logo=docker&label=Docker%20Pulls&link=https%3A%2F%2Fhub.docker.com%2Frepository%2Fdocker%2Fashleykza%2Fstable-diffusion-webui%2Fgeneral)
-![Template Version](https://img.shields.io/github/v/tag/ashleykleynhans/stable-diffusion-docker?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjUuMywgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyMDAwIDIwMDAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIwMDAgMjAwMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM2NzNBQjc7fQo8L3N0eWxlPgo8Zz4KCTxnPgoJCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMDE3Ljk1LDcxMS4wNGMtNC4yMiwyLjM2LTkuMTgsMy4wMS0xMy44NiwxLjgyTDM4Ni4xNyw1NTUuM2MtNDEuNzItMTAuNzYtODYuMDItMC42My0xMTYuNiwyOS43MwoJCQlsLTEuNCwxLjM5Yy0zNS45MiwzNS42NS0yNy41NSw5NS44LDE2Ljc0LDEyMC4zbDU4NC4zMiwzMjQuMjNjMzEuMzYsMTcuNCw1MC44Miw1MC40NSw1MC44Miw4Ni4zMnY4MDYuNzYKCQkJYzAsMzUuNDktMzguNDEsNTcuNjctNjkuMTUsMzkuOTRsLTcwMy4xNS00MDUuNjRjLTIzLjYtMTMuNjEtMzguMTMtMzguNzgtMzguMTMtNjYuMDJWNjY2LjYzYzAtODcuMjQsNDYuNDUtMTY3Ljg5LDEyMS45Mi0yMTEuNjYKCQkJTDkzMy44NSw0Mi4xNWMyMy40OC0xMy44LDUxLjQ3LTE3LjcsNzcuODMtMTAuODRsNzQ1LjcxLDE5NC4xYzMxLjUzLDguMjEsMzYuOTksNTAuNjUsOC41Niw2Ni41N0wxMDE3Ljk1LDcxMS4wNHoiLz4KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTUyNy43NSw1MzYuMzhsMTI4Ljg5LTc5LjYzbDE4OS45MiwxMDkuMTdjMjcuMjQsMTUuNjYsNDMuOTcsNDQuNzMsNDMuODIsNzYuMTVsLTQsODU3LjYKCQkJYy0wLjExLDI0LjM5LTEzLjE1LDQ2Ljg5LTM0LjI1LDU5LjExbC03MDEuNzUsNDA2LjYxYy0zMi4zLDE4LjcxLTcyLjc0LTQuNTktNzIuNzQtNDEuOTJ2LTc5Ny40MwoJCQljMC0zOC45OCwyMS4wNi03NC45MSw1NS4wNy05My45Nmw1OTAuMTctMzMwLjUzYzE4LjIzLTEwLjIxLDE4LjY1LTM2LjMsMC43NS00Ny4wOUwxNTI3Ljc1LDUzNi4zOHoiLz4KCQk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTUyNC4wMSw2NjUuOTEiLz4KCTwvZz4KPC9nPgo8L3N2Zz4K&logoColor=%23ffffff&label=Template%20Version&color=%23673ab7)
-
 </div>
+
+[Original GitHub Repo](https://img.shields.io/badge/github-repo-green?logo=github)(https://github.com/ashleykleynhans/stable-diffusion-docker)
 
 Now with SDXL support.
 
@@ -52,9 +47,6 @@ Now with SDXL support.
   https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/resolve/main/sdxl_vae.safetensors)
 * [inswapper_128.onnx](
   https://github.com/facefusion/facefusion-assets/releases/download/models/inswapper_128.onnx)
-* [runpodctl](https://github.com/runpod/runpodctl)
-* [OhMyRunPod](https://github.com/kodxana/OhMyRunPod)
-* [RunPod File Uploader](https://github.com/kodxana/RunPod-FilleUploader)
 * [croc](https://github.com/schollz/croc)
 * [rclone](https://rclone.org/)
 * [Application Manager](https://github.com/ashleykleynhans/app-manager)
@@ -82,15 +74,18 @@ to launch it on RunPod.
 
 ```bash
 # Clone the repo
-git clone https://github.com/ashleykleynhans/stable-diffusion-docker.git
+git clone https://github.com/bean980310/stable-diffusion-docker.git
+
+# Change a Directory permission
+chmod -R a+rwx stable-diffusion-docker
 
 # Download the models
 cd stable-diffusion-docker
-wget https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned.safetensors
-wget https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors
-wget https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors
-wget https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors
-wget https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/resolve/main/sdxl_vae.safetensors
+source pre_download.sh
+
+# If you want download alternate models:
+source pre_download_alt.sh
+source pre_download_controlnet.sh
 
 # Log in to Docker Hub
 docker login
@@ -116,10 +111,9 @@ REGISTRY=ghcr.io REGISTRY_USER=myuser RELEASE=my-release docker buildx \
 docker run -d \
   --gpus all \
   -v /workspace \
-  -p 2999:2999 \
-  -p 3000:3001 \
-  -p 3010:3011 \
-  -p 3020:3021 \
+  -p 3010:3001 \
+  -p 3020:3011 \
+  -p 3030:3021 \
   -p 6006:6066 \
   -p 7777:7777 \
   -p 8000:8000 \
@@ -127,7 +121,7 @@ docker run -d \
   -p 9090:9090 \
   -e JUPYTER_PASSWORD=Jup1t3R! \
   -e ENABLE_TENSORBOARD=1 \
-  ashleykza/stable-diffusion-webui:latest
+  bean980310/stable-diffusion-webui:latest
 ```
 
 You can obviously substitute the image name and tag with your own.
@@ -136,15 +130,14 @@ You can obviously substitute the image name and tag with your own.
 
 | Connect Port | Internal Port | Description                   |
 |--------------|---------------|-------------------------------|
-| 3000         | 3001          | A1111 Stable Diffusion Web UI |
-| 3010         | 3011          | Kohya_ss                      |
-| 3020         | 3021          | ComfyUI                       |
+| 3010         | 3001          | A1111 Stable Diffusion Web UI |
+| 3020         | 3011          | Kohya_ss                      |
+| 3030         | 3021          | ComfyUI                       |
 | 9090         | 9090          | InvokeAI                      |
 | 6006         | 6066          | Tensorboard                   |
 | 7777         | 7777          | Code Server                   |
 | 8000         | 8000          | Application Manager           |
 | 8888         | 8888          | Jupyter Lab                   |
-| 2999         | 2999          | RunPod File Uploader          |
 
 ### Environment Variables
 
@@ -176,10 +169,3 @@ tail -f  /workspace/logs/webui.log
 ```
 
 ## Community and Contributing
-
-Pull requests and issues on [GitHub](https://github.com/ashleykleynhans/stable-diffusion-docker)
-are welcome. Bug fixes and new features are encouraged.
-
-## Appreciate my work?
-
-<a href="https://www.buymeacoffee.com/ashleyk" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
